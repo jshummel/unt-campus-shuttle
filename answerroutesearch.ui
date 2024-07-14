@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>960</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,14 +21,14 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>90</height>
+     <width>1280</width>
+     <height>144</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: white;
 background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
+font: 60pt &quot;Oswald&quot;;
 border-bottom: 1px solid #000000;</string>
    </property>
    <property name="text">
@@ -38,33 +38,13 @@ border-bottom: 1px solid #000000;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="BottomFill">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>510</y>
-     <width>800</width>
-     <height>90</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: white;
-background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
-border-bottom: 1px solid #000000;
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Back">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>412</y>
-     <width>340</width>
-     <height>60</height>
+     <x>0</x>
+     <y>816</y>
+     <width>1280</width>
+     <height>144</height>
     </rect>
    </property>
    <property name="autoFillBackground">
@@ -74,9 +54,10 @@ border-bottom: 1px solid #000000;
     <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
-	border-radius: 20px;
-	border: 1px solid #000000;
+	font: 30pt &quot;Oswald&quot;;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #000000;
 }
 
 QPushButton::Hover{
@@ -98,17 +79,23 @@ QPushButton::Pressed{
   <widget class="QLabel" name="Text1">
    <property name="geometry">
     <rect>
-     <x>145</x>
-     <y>127</y>
-     <width>510</width>
-     <height>60</height>
+     <x>232</x>
+     <y>204</y>
+     <width>816</width>
+     <height>96</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
+	font: 30pt &quot;Oswald&quot;;
 	border-radius: 20px;
 	border: 1px solid #000000;
 }</string>
@@ -118,22 +105,25 @@ QPushButton::Pressed{
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="Text2">
    <property name="geometry">
     <rect>
-     <x>145</x>
-     <y>222</y>
-     <width>510</width>
-     <height>60</height>
+     <x>56</x>
+     <y>360</y>
+     <width>544</width>
+     <height>240</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
+	font: 30pt &quot;Oswald&quot;;
 	border-radius: 20px;
 	border: 1px solid #000000;
 }</string>
@@ -142,23 +132,26 @@ QPushButton::Pressed{
     <string/>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="Text3">
    <property name="geometry">
     <rect>
-     <x>145</x>
-     <y>317</y>
-     <width>510</width>
-     <height>60</height>
+     <x>680</x>
+     <y>360</y>
+     <width>544</width>
+     <height>240</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
+	font: 30pt &quot;Oswald&quot;;
 	border-radius: 20px;
 	border: 1px solid #000000;
 }</string>
@@ -167,7 +160,112 @@ QPushButton::Pressed{
     <string/>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EndRoute">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>660</y>
+     <width>544</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(39, 100, 54);
+	font: 30pt &quot;Oswald&quot;;
+	border-radius: 20px;
+	border: 1px solid #000000;
+}
+
+QPushButton::Hover{
+	border-color: rgb(0, 0, 0);
+	border: 5px solid #000000;
+}
+
+QPushButton::Pressed{
+	border-color: rgb(0, 0, 0);
+	border: 5px solid;
+	background-color: rgb(90,152,101);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RecRoute">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>660</y>
+     <width>816</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(39, 100, 54);
+	font: 30pt &quot;Oswald&quot;;
+	border-radius: 20px;
+	border: 1px solid #000000;
+}
+
+QPushButton::Hover{
+	border-color: rgb(0, 0, 0);
+	border: 5px solid #000000;
+}
+
+QPushButton::Pressed{
+	border-color: rgb(0, 0, 0);
+	border: 5px solid;
+	background-color: rgb(90,152,101);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="StartRoute">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>660</y>
+     <width>544</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(39, 100, 54);
+	font: 30pt &quot;Oswald&quot;;
+	border-radius: 20px;
+	border: 1px solid #000000;
+}
+
+QPushButton::Hover{
+	border-color: rgb(0, 0, 0);
+	border: 5px solid #000000;
+}
+
+QPushButton::Pressed{
+	border-color: rgb(0, 0, 0);
+	border: 5px solid;
+	background-color: rgb(90,152,101);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

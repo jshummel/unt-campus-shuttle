@@ -16,8 +16,11 @@ public:
     explicit AnswerRouteInformation(Database* database,QString routeName, QWidget *parent = nullptr);
     ~AnswerRouteInformation();
 
-    // needs to be implemented
-    void routeInformation();
+    void routeInformation(const string& routeName);
+
+    void setImage(const QString& imgMap, const QString& imgTime);
+
+    QString routeName;
 
 private slots:
     void on_Back_clicked();
@@ -25,7 +28,6 @@ private slots:
 private:
     Ui::AnswerRouteInformation *ui;
 
-    QString routeName;
     Database* database;
 };
 

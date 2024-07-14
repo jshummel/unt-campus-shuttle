@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>960</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,14 +21,14 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>175</height>
+     <width>1280</width>
+     <height>280</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: white;
 background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
+font: 60pt &quot;Oswald&quot;;
 border-bottom: 1px solid #000000;</string>
    </property>
    <property name="text">
@@ -38,60 +38,20 @@ border-bottom: 1px solid #000000;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="BottomFill">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>510</y>
-     <width>800</width>
-     <height>90</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: white;
-background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
-border-top: 1px solid #000000;
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="RouteName">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>220</y>
-     <width>340</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLineEdit{
-	color: rgb(0, 0, 0);
-	font: 18pt &quot;Oswald&quot;;
-	background-color: white;
-	placeholder-text-color: rgb(156, 163, 175);
-	border-radius: 20px;
-	border: 1px solid #000000;
-}</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Submit">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>315</y>
-     <width>340</width>
-     <height>60</height>
+     <x>368</x>
+     <y>588</y>
+     <width>544</width>
+     <height>90</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
+	font: 30pt &quot;Oswald&quot;;
 	border-radius: 20px;
 	border: 1px solid #000000;
 }
@@ -115,19 +75,20 @@ QPushButton::Pressed{
   <widget class="QPushButton" name="Back">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>410</y>
-     <width>340</width>
-     <height>60</height>
+     <x>0</x>
+     <y>816</y>
+     <width>1280</width>
+     <height>144</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
-	border-radius: 20px;
-	border: 1px solid #000000;
+	font: 30pt &quot;Oswald&quot;;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #000000;
 }
 
 QPushButton::Hover{
@@ -144,6 +105,38 @@ QPushButton::Pressed{
    </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="RouteName">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>412</y>
+     <width>544</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	color: rgb(0, 0, 0);
+	font: 30pt &quot;Oswald&quot;;
+	background-color: white;
+	placeholder-text-color: rgb(156, 163, 175);
+	border-radius: 20px;
+	border: 1px solid #000000;
+}
+
+QComboBox::drop-down {
+	width: 0px;
+}
+
+QComboBox QAbstractItemView {
+    color: rgb(0,0,0);
+    font: 30pt 'Oswald';
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+}</string>
    </property>
   </widget>
  </widget>

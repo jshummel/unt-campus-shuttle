@@ -9,11 +9,29 @@ RouteInformation::RouteInformation(Database* database, QWidget *parent)
 {
     ui->setupUi(this);
     // removes ability to resize window
-    QWidget::setFixedSize(800,600);
+    QWidget::setFixedSize(1280,960);
+
+    QStringList locations = {
+        "BST_164",
+        "CE_174",
+        "CP_154",
+        "DP_144",
+        "DS_184",
+        "EOC_194_A",
+        "EOC_194_B",
+        "EP_131",
+        "MGNR_116",
+        "NT_124"
+    };
+
+    ui->RouteName->setPlaceholderText("Route Name");
+    ui->RouteName->addItems(locations);
 
     // adds and aligns placeholder text to QLineEdit
-    ui->RouteName->setPlaceholderText("Route Name");
-    ui->RouteName->setAlignment(Qt::AlignHCenter);
+    // ui->RouteName->setPlaceholderText("Route Name");
+    // ui->RouteName->setAlignment(Qt::AlignHCenter);
+
+
 }
 
 RouteInformation::~RouteInformation()
@@ -32,11 +50,13 @@ QString routeName;
 void RouteInformation::on_Submit_clicked()
 {
     qDebug("on_RouteInformation_Submit_clicked");
-    routeName = ui->RouteName->text();
+    routeName = ui->RouteName->currentText();
     AnswerRouteInformation *ari = new AnswerRouteInformation(database, routeName, this);
     ari->show();
     //tests to make sure db crosses to this window - works as of 06_13v4
     //database->printList(database->allBusStopNames);
-    ui->RouteName->clear();
-    qDebug("RouteName cleared");
+    // ui->RouteName->clear();
+    // qDebug("RouteName cleared");
+
 }
+

@@ -23,6 +23,7 @@ private slots:
 
 private:
     Ui::RouteInformation *ui;
+
     Database* database;
 };
 

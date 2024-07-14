@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>960</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,14 +25,14 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>800</width>
-      <height>175</height>
+      <width>1280</width>
+      <height>280</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color: white;
 background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
+font: 60pt &quot;Oswald&quot;;
 border-bottom: 1px solid #000000;
 </string>
     </property>
@@ -43,37 +43,20 @@ border-bottom: 1px solid #000000;
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="BottomFill">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>510</y>
-      <width>800</width>
-      <height>90</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(39, 100, 54);
-border-top: 1px solid #000000;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QPushButton" name="RouteInformation">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>220</y>
-      <width>340</width>
-      <height>60</height>
+      <x>368</x>
+      <y>412</y>
+      <width>544</width>
+      <height>96</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
+	font: 30pt &quot;Oswald&quot;;
 	border-radius: 20px;
 	border: 1px solid #000000;
 }
@@ -97,17 +80,17 @@ QPushButton::Pressed{
    <widget class="QPushButton" name="RouteSearch">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>315</y>
-      <width>340</width>
-      <height>60</height>
+      <x>368</x>
+      <y>588</y>
+      <width>544</width>
+      <height>96</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
+	font: 30pt &quot;Oswald&quot;;
 	border-radius: 20px;
 	border: 1px solid #000000;
 }
@@ -131,19 +114,20 @@ QPushButton::Pressed{
    <widget class="QPushButton" name="Quit">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>410</y>
-      <width>340</width>
-      <height>60</height>
+      <x>0</x>
+      <y>816</y>
+      <width>1280</width>
+      <height>144</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
-	border-radius: 20px;
-	border: 1px solid #000000;
+	font: 30pt &quot;Oswald&quot;;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #000000;
 }
 
 QPushButton::Hover{
@@ -160,6 +144,48 @@ QPushButton::Pressed{
     </property>
     <property name="text">
      <string>Quit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DarkMode">
+    <property name="geometry">
+     <rect>
+      <x>1068</x>
+      <y>756</y>
+      <width>192</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oswald</family>
+      <pointsize>18</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(39, 100, 54);
+	font: 18pt &quot;Oswald&quot;;
+	border-radius: 8px;
+	border: 1px solid #000000;
+}
+
+QPushButton::Hover{
+	border-color: rgb(0, 0, 0);
+	border: 2px solid #000000;
+}
+
+QPushButton::Pressed{
+	border-color: rgb(0, 0, 0);
+	border: 2px solid;
+	background-color: rgb(90,152,101);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Dark Mode</string>
     </property>
    </widget>
   </widget>
