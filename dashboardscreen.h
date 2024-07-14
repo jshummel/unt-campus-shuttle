@@ -18,6 +18,9 @@ public:
     DashboardScreen(Database* database, QWidget *parent = nullptr);
     ~DashboardScreen();
 
+signals:
+    void checked(bool);
+
 private slots:
     void on_Quit_clicked();
 
@@ -25,8 +28,16 @@ private slots:
 
     void on_RouteInformation_clicked();
 
+    void on_DarkMode_clicked();
+
 private:
     Ui::DashboardScreen *ui;
+
     Database* database;
+
+    QPixmap bg;
+
+    bool darkModeEnabled = false;
+
 };
 #endif // DASHBOARDSCREEN_H

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>960</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,14 +21,14 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>90</height>
+     <width>1280</width>
+     <height>144</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: white;
 background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
+font: 60pt &quot;Oswald&quot;;
 border-bottom: 1px solid #000000;
 </string>
    </property>
@@ -39,42 +39,23 @@ border-bottom: 1px solid #000000;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="BottomFill">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>510</y>
-     <width>800</width>
-     <height>90</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: white;
-background-color: rgb(39, 100, 54);
-font: 36pt &quot;Oswald&quot;;
-border-bottom: 1px solid #000000;
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Back">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>415</y>
-     <width>340</width>
-     <height>60</height>
+     <x>0</x>
+     <y>816</y>
+     <width>1280</width>
+     <height>144</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
 	color: white;
 	background-color: rgb(39, 100, 54);
-	font: 18pt &quot;Oswald&quot;;
-	border-radius: 20px;
-	border: 1px solid #000000;
+	font: 30pt &quot;Oswald&quot;;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #000000;
 }
 
 QPushButton::Hover{
@@ -91,6 +72,32 @@ QPushButton::Pressed{
    </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Timetable">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>144</y>
+     <width>640</width>
+     <height>672</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Map">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>144</y>
+     <width>640</width>
+     <height>672</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

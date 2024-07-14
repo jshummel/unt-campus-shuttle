@@ -16,13 +16,19 @@ public:
     explicit RouteSearch(Database* database, QWidget *parent = nullptr);
     ~RouteSearch();
 
+    string getCurrentTime();
+
+    bool isValidTime(const QString& timeStr);
+
 private slots:
     void on_Back_clicked();
 
     void on_Submit_clicked();
 
-private:
+    void on_TimeToggle_clicked(bool checked);
+ private:
     Ui::RouteSearch *ui;
+
     Database* database;
 };
 

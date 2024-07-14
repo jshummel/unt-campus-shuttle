@@ -11,18 +11,22 @@ using namespace std;
 
 class Database {
 public:
-    unordered_map<string, unordered_map<string, vector<string>>> routeDB;
-    unordered_map<string, unordered_map<string, vector<string>>> stopDB;
-    vector<string> allBusStopNames;
-
     Database();
     ~Database();
 
+    unordered_map<string, unordered_map<string, vector<string>>> routeDB;
+
+    unordered_map<string, unordered_map<string, vector<string>>> stopDB;
+
+    vector<string> allBusStopNames;
+
     void printDatabase(const unordered_map<string, unordered_map<string, vector<string>>>& database);
+
     void printList(const vector<string>& list);
 
 private:
     void printMap(const unordered_map<string, vector<string>>& map);
+
     unordered_map<string, vector<string>> csvParser(const filesystem::path& filepath, vector<string>& allBusStopNames);
 };
 
