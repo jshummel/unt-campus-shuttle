@@ -8,5 +8,6 @@ The program parses the `.csv` files and creates a graph data structure for the d
 ## Running the Program
 To run the compiled program, run:
 ```sh
-/_RELEASE/BusRouteApplication.exe
+BusRouteApplication.exe
 ```
+located in the _RELEASE folder. _IMAGES and _CSV folders need to be available in the root folder for the application to execute successfully.
